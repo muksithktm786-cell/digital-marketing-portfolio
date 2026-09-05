@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sahul Hameed Muksith — Digital Marketing Executive | SEO & Local SEO</title>
+<meta name="description" content="Digital Marketing Executive with hands-on experience in SEO, Local SEO, Google Business Profile optimization, and AI-driven marketing. Currently seeking opportunities in Dubai, UAE.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+
+  :root{
+    --ink:        #16242B;
+    --ink-soft:   #2B3D45;
+    --paper:      #F2EFE6;
+    --paper-2:    #FAF8F2;
+    --brass:      #9C6B30;
+    --brass-deep: #6E4A1F;
+    --slate:      #5C6B70;
+    --line:       #D9D1BF;
+    --white:      #FFFFFF;
+
+    --seo:        #6E4A1F;
+    --local:      #3E5C55;
+    --content:    #5B4B8A;
+    --ai:         #7A5230;
+
+    --serif: 'Fraunces', Georgia, serif;
+    --sans:  'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+    --max: 1080px;
+  }
+
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--sans);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  a{ color:inherit; }
+  img{ max-width:100%; display:block; }
+
+  .wrap{
+    max-width:var(--max);
+    margin:0 auto;
+    padding:0 32px;
+  }
+
+  h1,h2,h3{
+    font-family:var(--serif);
+    font-weight:600;
+    line-height:1.15;
+    margin:0;
+    color:var(--ink);
+  }
+
+  p{ margin:0 0 1em; max-width:62ch; }
+  p:last-child{ margin-bottom:0; }
+
+  .focus-ring:focus-visible{
+    outline:2px solid var(--brass);
+    outline-offset:3px;
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{ animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important; scroll-behavior:auto !important; }
+  }
+
+  /* ---------- NAV ---------- */
+  header.site-nav{
+    position:sticky;
+    top:0;
+    z-index:50;
+    background:rgba(242,239,230,0.92);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{
+    max-width:var(--max);
+    margin:0 auto;
+    padding:16px 32px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:24px;
+  }
+  .nav-name{
+    font-family:var(--serif);
+    font-weight:600;
+    font-size:1.05rem;
+    text-decoration:none;
+    white-space:nowrap;
+  }
+  nav.links{
+    display:flex;
+    align-items:center;
+    gap:28px;
+  }
+  nav.links a{
+    text-decoration:none;
+    font-size:0.94rem;
+    color:var(--ink-soft);
+    padding:4px 2px;
+    border-bottom:1px solid transparent;
+    transition:border-color .15s ease, color .15s ease;
+  }
+  nav.links a:hover{ color:var(--ink); border-color:var(--brass); }
+
+  .btn{
+    display:inline-block;
+    font-family:var(--sans);
+    font-weight:600;
+    font-size:0.92rem;
+    text-decoration:none;
+    padding:11px 22px;
+    border-radius:3px;
+    border:1px solid transparent;
+    cursor:pointer;
+    transition:transform .12s ease, background .15s ease, color .15s ease, border-color .15s ease;
+  }
+  .btn:hover{ transform:translateY(-1px); }
+  .btn-primary{ background:var(--ink); color:var(--paper-2); }
+  .btn-primary:hover{ background:var(--brass-deep); }
+  .btn-outline{ background:transparent; color:var(--ink); border-color:var(--ink); }
+  .btn-outline:hover{ background:var(--ink); color:var(--paper-2); }
+  .btn-sm{ padding:8px 16px; font-size:0.85rem; }
+
+  .menu-toggle{
+    display:none;
+    background:none;
+    border:1px solid var(--line);
+    border-radius:3px;
+    padding:8px 10px;
+    font-size:0.85rem;
+    cursor:pointer;
+    color:var(--ink);
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    padding:96px 0 80px;
+    opacity:0;
+    transform:translateY(14px);
+    animation:rise .8s ease forwards;
+  }
+  @keyframes rise{ to{ opacity:1; transform:translateY(0); } }
+
+  .hero .eyebrow-line{
+    font-size:0.98rem;
+    color:var(--slate);
+    margin-bottom:18px;
+  }
+  .hero h1{
+    font-size:clamp(2.6rem, 5.4vw, 4.4rem);
+    letter-spacing:-0.01em;
+    margin-bottom:8px;
+  }
+  .hero .role-line{
+    font-family:var(--serif);
+    font-style:italic;
+    font-weight:500;
+    font-size:clamp(1.15rem, 2vw, 1.5rem);
+    color:var(--brass-deep);
+    margin-bottom:28px;
+  }
+  .hero .tagline{
+    font-size:1.02rem;
+    color:var(--ink-soft);
+    border-left:2px solid var(--brass);
+    padding-left:16px;
+    margin-bottom:34px;
+    max-width:56ch;
+  }
+  .hero .cta-row{
+    display:flex;
+    gap:16px;
+    flex-wrap:wrap;
+  }
+
+  /* ---------- SECTION SCAFFOLD ---------- */
+  section{ padding:76px 0; border-bottom:1px solid var(--line); }
+  section:last-of-type{ border-bottom:none; }
+
+  .section-head{
+    display:flex;
+    align-items:baseline;
+    justify-content:space-between;
+    gap:24px;
+    margin-bottom:40px;
+    flex-wrap:wrap;
+  }
+  .section-head h2{ font-size:clamp(1.8rem, 3vw, 2.3rem); }
+  .section-head .head-note{ color:var(--slate); font-size:0.94rem; max-width:36ch; }
+
+  /* ---------- ABOUT ---------- */
+  .about-grid{
+    display:grid;
+    grid-template-columns:1.3fr 1fr;
+    gap:56px;
+    align-items:start;
+  }
+  .about-copy p{ max-width:60ch; color:var(--ink-soft); }
+
+  .profile-card{
+    background:var(--paper-2);
+    border:1px solid var(--line);
+    border-radius:4px;
+    padding:28px;
+  }
+  .profile-card h3{ font-size:1.15rem; margin-bottom:10px; }
+  .profile-card .exp-line{
+    font-size:0.92rem;
+    color:var(--brass-deep);
+    font-weight:600;
+    margin-bottom:16px;
+  }
+
+  .skill-group{ margin-top:22px; }
+  .skill-group h4{
+    font-family:var(--sans);
+    font-size:0.8rem;
+    font-weight:700;
+    color:var(--slate);
+    margin:0 0 10px;
+    text-transform:none;
+  }
+  .chips{ display:flex; flex-wrap:wrap; gap:8px; }
+  .chip{
+    font-size:0.82rem;
+    padding:6px 12px;
+    background:var(--paper);
+    border:1px solid var(--line);
+    border-radius:20px;
+    color:var(--ink-soft);
+    white-space:nowrap;
+  }
+
+  .softskills{
+    margin-top:56px;
+    padding-top:36px;
+    border-top:1px solid var(--line);
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px 28px;
+    color:var(--slate);
+    font-size:0.95rem;
+  }
+  .softskills span{ position:relative; padding-left:16px; }
+  .softskills span::before{
+    content:"";
+    position:absolute; left:0; top:0.55em;
+    width:6px; height:6px; border-radius:50%;
+    background:var(--brass);
+  }
+
+  /* ---------- PROJECTS ---------- */
+  .exec-summary{ max-width:74ch; color:var(--ink-soft); margin-bottom:44px; }
+
+  .competency-grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:1px;
+    background:var(--line);
+    border:1px solid var(--line);
+    margin-bottom:64px;
+  }
+  .competency-cell{
+    background:var(--paper-2);
+    padding:20px;
+  }
+  .competency-cell h4{
+    font-family:var(--serif);
+    font-size:1rem;
+    font-weight:600;
+    margin-bottom:10px;
+  }
+  .competency-cell ul{
+    margin:0; padding-left:18px;
+    font-size:0.86rem;
+    color:var(--slate);
+  }
+  .competency-cell li{ margin-bottom:4px; }
+
+  .project-category{ margin-bottom:52px; }
+  .project-category:last-child{ margin-bottom:0; }
+  .project-category > h3{
+    font-size:1.3rem;
+    margin-bottom:20px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .cat-dot{ width:10px; height:10px; border-radius:50%; display:inline-block; }
+  .cat-seo .cat-dot{ background:var(--seo); }
+  .cat-local .cat-dot{ background:var(--local); }
+  .cat-content .cat-dot{ background:var(--content); }
+  .cat-ai .cat-dot{ background:var(--ai); }
+
+  .project-row{
+    display:grid;
+    grid-template-columns:220px 1fr;
+    gap:24px;
+    padding:20px 0;
+    border-top:1px solid var(--line);
+  }
+  .project-category:last-child .project-row:last-child{ border-bottom:1px solid var(--line); }
+  .project-row .p-title{
+    font-family:var(--serif);
+    font-weight:600;
+    font-size:1.05rem;
+  }
+  .project-row .p-industry{
+    display:block;
+    font-family:var(--sans);
+    font-weight:400;
+    font-size:0.8rem;
+    color:var(--slate);
+    margin-top:4px;
+  }
+  .project-row .p-body p{ font-size:0.93rem; color:var(--ink-soft); margin-bottom:6px; }
+  .p-skills{ font-size:0.8rem; color:var(--brass-deep); }
+
+  .cat-seo{ border-left:3px solid var(--seo); padding-left:20px; }
+  .cat-local{ border-left:3px solid var(--local); padding-left:20px; }
+  .cat-content{ border-left:3px solid var(--content); padding-left:20px; }
+  .cat-ai{ border-left:3px solid var(--ai); padding-left:20px; }
+
+  .gmb-grid{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:14px 28px;
+  }
+  .gmb-item{
+    border-top:1px solid var(--line);
+    padding:14px 0;
+  }
+  .gmb-item .g-title{ font-weight:600; font-size:0.95rem; }
+  .gmb-item .g-body{ font-size:0.85rem; color:var(--slate); margin-top:4px; }
+
+  /* ---------- EDUCATION ---------- */
+  .timeline{ position:relative; padding-left:28px; }
+  .timeline::before{
+    content:"";
+    position:absolute; left:5px; top:6px; bottom:6px;
+    width:1px; background:var(--line);
+  }
+  .t-item{ position:relative; margin-bottom:34px; }
+  .t-item:last-child{ margin-bottom:0; }
+  .t-item::before{
+    content:"";
+    position:absolute; left:-28px; top:4px;
+    width:11px; height:11px; border-radius:50%;
+    background:var(--paper); border:2px solid var(--brass);
+  }
+  .t-item h4{ font-family:var(--serif); font-size:1.1rem; margin-bottom:4px; }
+  .t-item .t-meta{ font-size:0.85rem; color:var(--slate); margin-bottom:8px; }
+  .t-item .t-focus{ font-size:0.9rem; color:var(--ink-soft); }
+
+  .cert-list{ margin-top:56px; }
+  .cert-list h3{ font-size:1.3rem; margin-bottom:20px; }
+  .cert-row{
+    display:grid;
+    grid-template-columns:1fr auto;
+    gap:16px;
+    padding:16px 0;
+    border-top:1px solid var(--line);
+    align-items:baseline;
+  }
+  .cert-list .cert-row:last-child{ border-bottom:1px solid var(--line); }
+  .cert-row .c-name{ font-weight:600; font-size:0.98rem; }
+  .cert-row .c-issuer{ display:block; font-size:0.85rem; color:var(--slate); font-weight:400; margin-top:2px; }
+  .cert-row .c-date{ font-size:0.82rem; color:var(--slate); white-space:nowrap; }
+
+  .edu-note{
+    margin-top:24px;
+    font-size:0.83rem;
+    color:var(--slate);
+    font-style:italic;
+  }
+
+  /* ---------- CONTACT ---------- */
+  .contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1.1fr;
+    gap:56px;
+  }
+  .contact-block{ margin-bottom:32px; }
+  .contact-block:last-child{ margin-bottom:0; }
+  .contact-block h4{
+    font-size:0.8rem;
+    color:var(--slate);
+    font-weight:700;
+    margin-bottom:8px;
+  }
+  .contact-block .val{ font-size:1.05rem; }
+  .contact-block a.val{ text-decoration:none; border-bottom:1px solid var(--brass); }
+  .status-pill{
+    display:inline-block;
+    background:var(--ink);
+    color:var(--paper-2);
+    font-size:0.82rem;
+    font-weight:600;
+    padding:7px 14px;
+    border-radius:20px;
+    margin-top:6px;
+  }
+
+  form.contact-form{
+    background:var(--paper-2);
+    border:1px solid var(--line);
+    border-radius:4px;
+    padding:32px;
+  }
+  .field{ margin-bottom:18px; }
+  .field label{
+    display:block;
+    font-size:0.82rem;
+    color:var(--slate);
+    margin-bottom:6px;
+  }
+  .field input, .field select, .field textarea{
+    width:100%;
+    font-family:var(--sans);
+    font-size:0.95rem;
+    padding:10px 12px;
+    border:1px solid var(--line);
+    border-radius:3px;
+    background:var(--white);
+    color:var(--ink);
+  }
+  .field textarea{ min-height:110px; resize:vertical; }
+  .field input:focus, .field select:focus, .field textarea:focus{
+    outline:2px solid var(--brass);
+    outline-offset:1px;
+  }
+  .form-confirm{
+    display:none;
+    background:#F0EEE3;
+    border:1px solid var(--brass);
+    border-radius:3px;
+    padding:14px 16px;
+    font-size:0.9rem;
+    margin-bottom:18px;
+  }
+  .form-confirm.show{ display:block; }
+  .response-note{
+    margin-top:18px;
+    font-size:0.85rem;
+    color:var(--slate);
+  }
+
+  /* ---------- FOOTER ---------- */
+  footer{
+    padding:36px 0 48px;
+    color:var(--slate);
+    font-size:0.85rem;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:12px;
+  }
+  footer a{ text-decoration:none; border-bottom:1px solid var(--line); }
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width: 860px){
+    .about-grid, .contact-grid{ grid-template-columns:1fr; }
+    .competency-grid{ grid-template-columns:repeat(2, 1fr); }
+    .gmb-grid{ grid-template-columns:1fr; }
+  }
+
+  @media (max-width: 720px){
+    nav.links{
+      position:fixed;
+      top:64px; left:0; right:0;
+      background:var(--paper-2);
+      border-bottom:1px solid var(--line);
+      flex-direction:column;
+      align-items:flex-start;
+      padding:16px 32px 24px;
+      gap:14px;
+      display:none;
+    }
+    nav.links.open{ display:flex; }
+    nav.links .btn{ margin-top:8px; }
+    .menu-toggle{ display:inline-block; }
+    .nav-inner .btn-primary.desktop-only{ display:none; }
+    .project-row{ grid-template-columns:1fr; }
+    .competency-grid{ grid-template-columns:1fr; }
+    .wrap{ padding:0 20px; }
+    .hero{ padding:64px 0 56px; }
+    section{ padding:56px 0; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a href="#home" class="nav-name focus-ring">Sahul Hameed Muksith</a>
+    <nav class="links" id="navLinks">
+      <a href="#home" class="focus-ring">Home</a>
+      <a href="#about" class="focus-ring">About</a>
+      <a href="#projects" class="focus-ring">Projects</a>
+      <a href="#education" class="focus-ring">Education</a>
+      <a href="#contact" class="focus-ring">Contact</a>
+      <a class="btn btn-primary btn-sm focus-ring" href="#" target="_blank" rel="noopener" id="resumeBtnMobile">Download Resume</a>
+    </nav>
+    <a class="btn btn-primary btn-sm focus-ring desktop-only" href="#" target="_blank" rel="noopener" id="resumeBtnDesktop">Download Resume</a>
+    <button class="menu-toggle focus-ring" id="menuToggle" aria-expanded="false" aria-controls="navLinks">Menu</button>
+  </div>
+</header>
+
+<main>
+
+  <!-- HOME / HERO -->
+  <section id="home" class="hero">
+    <div class="wrap">
+      <div class="eyebrow-line">Digital Marketing Executive · Chennai, India → Dubai, UAE</div>
+      <h1>Sahul Hameed Muksith</h1>
+      <div class="role-line">Digital Marketing Intern → Digital Marketing Executive</div>
+      <p class="tagline">I combine hands-on digital marketing experience with a hospitality-management background and AI-driven marketing training — helping businesses improve local visibility, search performance, and content quality through structured, honest execution.</p>
+      <div class="cta-row">
+        <a href="#" target="_blank" rel="noopener" class="btn btn-primary focus-ring">Download Resume</a>
+        <a href="#projects" class="btn btn-outline focus-ring">View My Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>About</h2>
+        <div class="head-note">Hospitality discipline, applied to digital growth.</div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>I am Sahul Hameed Muksith, a motivated and goal-driven Digital Marketing professional with a strong foundation in the hospitality industry, now transitioning into technology-driven and modern marketing development.</p>
+          <p>My Diploma in Hotel Management and Catering Science, along with a specialisation in Front Office and Hospitality Operations Management, gave me a practical grounding in customer experience, service quality, professional communication, and operational discipline. These are skills I now apply directly to digital marketing — understanding what a customer or client actually needs, communicating clearly across teams, and staying organised when handling multiple deliverables at once.</p>
+          <p>To move into digital marketing with a solid technical foundation, I completed AI-driven Digital Marketing training at Login360 Software Training Institute, Chennai, gaining practical exposure to SEO, SEM, Social Media Marketing, Content Strategy, Analytics, AI tools, and Performance Marketing.</p>
+          <p>I currently work at TuberBug Digital Marketing Academy &amp; Agency, where I progressed from Digital Marketing Intern to Digital Marketing Executive. My day-to-day work covers SEO optimization, content planning, social media campaigns, keyword research, analytics tracking, website operations, and client projects across several industries — from healthcare and education to consumer services and B2B.</p>
+          <p>Looking ahead, my career goal is to build on this foundation in Digital Marketing, AI, Modern Marketing, and Business Development — working toward roles and, eventually, ventures that combine all four.</p>
+
+          <div class="softskills">
+            <span>Professional Communication</span>
+            <span>Project Management</span>
+            <span>Problem Solving</span>
+            <span>Critical Thinking</span>
+            <span>Creative Thinking &amp; Innovation</span>
+            <span>Team Collaboration</span>
+            <span>Client Coordination</span>
+            <span>Time Management</span>
+            <span>Adaptability</span>
+            <span>Attention to Detail</span>
+          </div>
+        </div>
+
+        <div class="profile-card">
+          <h3>Professional Profile</h3>
+          <div class="exp-line">9 months of hands-on experience</div>
+          <p style="font-size:0.92rem; color:var(--ink-soft);">Core experience across SEO, Local SEO, Google Business Profile optimization, social media management, content marketing, graphic design, online reputation management, WordPress, analytics, and AI-powered marketing.</p>
+
+          <div class="skill-group">
+            <h4>Digital Marketing Skills</h4>
+            <div class="chips">
+              <span class="chip">SEO</span>
+              <span class="chip">Local SEO</span>
+              <span class="chip">Google Business Profile</span>
+              <span class="chip">Content Marketing</span>
+              <span class="chip">Blog Writing</span>
+              <span class="chip">Social Media Management</span>
+              <span class="chip">WordPress</span>
+              <span class="chip">Keyword Research</span>
+              <span class="chip">Competitor Analysis</span>
+              <span class="chip">AI Tools</span>
+              <span class="chip">Online Reputation Management</span>
+              <span class="chip">LinkedIn Branding</span>
+              <span class="chip">Prompt Engineering</span>
+              <span class="chip">RCTF Framework</span>
+              <span class="chip">Creative Poster Design</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h4>Advanced Marketing Areas</h4>
+            <div class="chips">
+              <span class="chip">Technical SEO</span>
+              <span class="chip">On-Page SEO</span>
+              <span class="chip">Off-Page SEO</span>
+              <span class="chip">AEO</span>
+              <span class="chip">GEO</span>
+              <span class="chip">AI Search Visibility</span>
+              <span class="chip">Entity Optimization</span>
+              <span class="chip">Structured Data</span>
+              <span class="chip">Search Intent</span>
+              <span class="chip">Performance Marketing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <div class="head-note">8+ SEO campaigns · 10+ GBP optimizations</div>
+      </div>
+
+      <p class="exec-summary">Sahul Hameed Muksith is a results-focused Digital Marketing Executive who has worked on projects involving online visibility, SEO, local search, Google Business Profiles, content strategy, website operations, AI-assisted workflows, and creative digital assets. He progressed from Digital Marketing Intern to Digital Marketing Executive at TuberBug Digital Marketing Academy &amp; Agency in Chennai. Project experience spans healthcare, education, consumer services, B2B, and hospitality-adjacent clients — no traffic, revenue, or ranking figures are claimed here; each entry reflects real responsibilities and applied skills.</p>
+
+      <div class="competency-grid">
+        <div class="competency-cell">
+          <h4>SEO</h4>
+          <ul>
+            <li>Technical SEO Audits</li>
+            <li>On-Page / Off-Page SEO</li>
+            <li>Keyword Strategy &amp; Mapping</li>
+            <li>Search Intent · ASO</li>
+          </ul>
+        </div>
+        <div class="competency-cell">
+          <h4>AEO &amp; GEO</h4>
+          <ul>
+            <li>Answer Engine Optimization</li>
+            <li>Generative Engine Optimization</li>
+            <li>AI Search Visibility</li>
+            <li>Structured Data · Entity Optimization</li>
+          </ul>
+        </div>
+        <div class="competency-cell">
+          <h4>Local SEO</h4>
+          <ul>
+            <li>GBP Setup &amp; Category Optimization</li>
+            <li>Local Pack Strategy</li>
+            <li>Review Management</li>
+            <li>Geo-Targeted Citations</li>
+          </ul>
+        </div>
+        <div class="competency-cell">
+          <h4>Content Marketing</h4>
+          <ul>
+            <li>Blog Writing</li>
+            <li>Video Scriptwriting</li>
+            <li>Content Calendars</li>
+            <li>Audience Engagement</li>
+          </ul>
+        </div>
+        <div class="competency-cell">
+          <h4>Social Media</h4>
+          <ul>
+            <li>YouTube Optimization</li>
+            <li>Instagram &amp; Facebook</li>
+            <li>Meta Campaign Operations</li>
+            <li>Content Scheduling</li>
+          </ul>
+        </div>
+        <div class="competency-cell">
+          <h4>CMS &amp; Technical Ops</h4>
+          <ul>
+            <li>WordPress Administration</li>
+            <li>Plugin Management</li>
+            <li>On-Page Maintenance</li>
+            <li>UX &amp; Performance Audits</li>
+          </ul>
+        </div>
+        <div class="competency-cell">
+          <h4>Analytics &amp; AI</h4>
+          <ul>
+            <li>Competitor Benchmarking</li>
+            <li>Online Reputation Management</li>
+            <li>AI Prompt Engineering (RCTF)</li>
+            <li>AI-Assisted Research</li>
+          </ul>
+        </div>
+        <div class="competency-cell">
+          <h4>Creative</h4>
+          <ul>
+            <li>Social Media Posters</li>
+            <li>Promotional Banners</li>
+            <li>Digital Creatives</li>
+            <li>Marketing Visuals</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- SEO / AEO / GEO -->
+      <div class="project-category cat-seo">
+        <h3><span class="cat-dot"></span>SEO, AEO &amp; GEO Projects</h3>
+
+        <div class="project-row">
+          <div><span class="p-title">VK Medical Center</span><span class="p-industry">Healthcare · Chennai</span></div>
+          <div class="p-body"><p>On-page SEO, site structure improvements, target search optimization, local healthcare search strategy.</p><div class="p-skills">On-Page SEO · Technical SEO · Local Search Strategy</div></div>
+        </div>
+        <div class="project-row">
+          <div><span class="p-title">A Way Consult</span><span class="p-industry">Consulting</span></div>
+          <div class="p-body"><p>High-intent keyword research, keyword mapping, content strategy, consultation-focused search targeting.</p><div class="p-skills">Keyword Research · Content Strategy · Search Intent</div></div>
+        </div>
+        <div class="project-row">
+          <div><span class="p-title">Island Training</span><span class="p-industry">Education &amp; Training · Dubai</span></div>
+          <div class="p-body"><p>Regional keyword research, UAE search market analysis, regional SEO strategy.</p><div class="p-skills">Regional SEO · Market Analysis · Keyword Research</div></div>
+        </div>
+        <div class="project-row">
+          <div><span class="p-title">Loan Vista</span><span class="p-industry">Financial Services</span></div>
+          <div class="p-body"><p>FAQ architecture, structured data, AEO/GEO strategy, People-Also-Ask–focused content structure, AI search visibility.</p><div class="p-skills">AEO · GEO · Structured Data · Content Architecture</div></div>
+        </div>
+        <div class="project-row">
+          <div><span class="p-title">FCL — Phase 1</span><span class="p-industry">Consumer Services</span></div>
+          <div class="p-body"><p>On-page SEO, off-page SEO, backlink acquisition.</p><div class="p-skills">On-Page SEO · Off-Page SEO · Link Building</div></div>
+        </div>
+        <div class="project-row">
+          <div><span class="p-title">FCL — Advanced Campaign</span><span class="p-industry">Consumer Services</span></div>
+          <div class="p-body"><p>Technical SEO audit, on-page SEO, off-page SEO, App Store Optimization.</p><div class="p-skills">Technical SEO · ASO · On/Off-Page SEO</div></div>
+        </div>
+        <div class="project-row">
+          <div><span class="p-title">Zeal Healing</span><span class="p-industry">Wellness</span></div>
+          <div class="p-body"><p>Niche keyword research, metadata optimization, on-page SEO.</p><div class="p-skills">Keyword Research · Metadata Optimization · On-Page SEO</div></div>
+        </div>
+        <div class="project-row">
+          <div><span class="p-title">The Hair Real</span><span class="p-industry">Beauty &amp; Consumer Products</span></div>
+          <div class="p-body"><p>Keyword targeting, GEO optimization, on-page optimization, organic search improvement strategies.</p><div class="p-skills">GEO · On-Page SEO · Organic Search Strategy</div></div>
+        </div>
+      </div>
+
+      <!-- LOCAL SEO / GBP -->
+      <div class="project-category cat-local">
+        <h3><span class="cat-dot"></span>Local SEO &amp; Google Business Profile Projects</h3>
+        <div class="gmb-grid">
+          <div class="gmb-item"><div class="g-title">Yenniss GMB — 3 Locations</div><div class="g-body">Profile setup, category optimization, geotagged media updates, local map strategy.</div></div>
+          <div class="gmb-item"><div class="g-title">TuberBug Tirunelveli GMB</div><div class="g-body">Regional GBP optimization, local citation building, lead channel setup.</div></div>
+          <div class="gmb-item"><div class="g-title">TuberBug GMB</div><div class="g-body">Local profile optimization, service listing updates, local search visibility.</div></div>
+          <div class="gmb-item"><div class="g-title">Torzen Energy GMB</div><div class="g-body">Engineering niche profile setup, business information optimization, geotagged updates.</div></div>
+          <div class="gmb-item"><div class="g-title">Mangai Engineers GMB</div><div class="g-body">Local listing optimization, service category targeting, inquiry tracking.</div></div>
+          <div class="gmb-item"><div class="g-title">Ebara Pump GMB</div><div class="g-body">B2B local search optimization, product/service listing, map visibility.</div></div>
+          <div class="gmb-item"><div class="g-title">SSS Bike Rent GMB</div><div class="g-body">Local rental keyword optimization, booking link integration, localized search targeting.</div></div>
+          <div class="gmb-item"><div class="g-title">Sri Sai Ram Hair GMB</div><div class="g-body">Local search optimization, profile verification, category targeting, map visibility.</div></div>
+          <div class="gmb-item"><div class="g-title">Firefly Campus Laundry GMB</div><div class="g-body">Community-level local SEO, location-based service targeting, Map Pack optimization.</div></div>
+          <div class="gmb-item"><div class="g-title">De SIFMA Media Academy GMB</div><div class="g-body">Educational institute profile optimization, category mapping, local lead generation setup.</div></div>
+        </div>
+      </div>
+
+      <!-- CONTENT / SOCIAL -->
+      <div class="project-category cat-content">
+        <h3><span class="cat-dot"></span>Content Marketing &amp; Social Media</h3>
+        <div class="project-row">
+          <div><span class="p-title">Fintastics</span><span class="p-industry">Fintech</span></div>
+          <div class="p-body"><p>Video scriptwriting, content calendar workflows, content planning.</p></div>
+        </div>
+        <div class="project-row">
+          <div><span class="p-title">Yenniss</span><span class="p-industry">Beauty &amp; Wellness</span></div>
+          <div class="p-body"><p>YouTube channel optimization, video metadata, audience retention strategies.</p></div>
+        </div>
+        <div class="project-row">
+          <div><span class="p-title">Intact Housing Solutions</span><span class="p-industry">Real Estate</span></div>
+          <div class="p-body"><p>Instagram management, Facebook management, content scheduling, audience growth strategies.</p></div>
+        </div>
+      </div>
+
+      <!-- AI / CREATIVE / OPS -->
+      <div class="project-category cat-ai">
+        <h3><span class="cat-dot"></span>Web Operations, ORM &amp; AI-Driven Marketing</h3>
+        <div class="project-row">
+          <div><span class="p-title">FCL — Website Operations</span><span class="p-industry">Consumer Services</span></div>
+          <div class="p-body"><p>WordPress management, website updates, plugin optimization, on-page maintenance.</p></div>
+        </div>
+        <div class="project-row">
+          <div><span class="p-title">Keyword Research &amp; Competitor Benchmarking</span><span class="p-industry">Cross-Client</span></div>
+          <div class="p-body"><p>Ongoing research into competitor positioning, search demand, keyword opportunities, and content gaps across the client portfolio.</p></div>
+        </div>
+        <div class="project-row">
+          <div><span class="p-title">Online Reputation Management</span><span class="p-industry">Cross-Client</span></div>
+          <div class="p-body"><p>Review monitoring, feedback workflows, Google Business Profile reputation management, and public-trust-focused response strategy.</p></div>
+        </div>
+        <div class="project-row">
+          <div><span class="p-title">AI Prompt Engineering — RCTF Framework</span><span class="p-industry">Role → Context → Task → Format</span></div>
+          <div class="p-body"><p>Applied to marketing research, content generation, SEO workflows, GMB content, strategy development, and workflow optimization.</p></div>
+        </div>
+        <div class="project-row">
+          <div><span class="p-title">GEO &amp; AEO Content Structuring</span><span class="p-industry">Cross-Client</span></div>
+          <div class="p-body"><p>AI-assisted content structuring to improve how business information is discovered across ChatGPT, Gemini, and Perplexity. No ranking or visibility guarantees are made.</p></div>
+        </div>
+        <div class="project-row">
+          <div><span class="p-title">Creative Design</span><span class="p-industry">Cross-Client</span></div>
+          <div class="p-body"><p>Social media posters, promotional banners, digital creatives, and marketing visuals produced for client campaigns.</p></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Education &amp; Certifications</h2>
+        <div class="head-note">Hospitality operations, digital marketing, and AI-driven search training.</div>
+      </div>
+
+      <div class="timeline">
+        <div class="t-item">
+          <h4>Diploma in Hotel Management &amp; Catering Science</h4>
+          <div class="t-meta">Annamalai Institute, Karur, Tamil Nadu — 2021</div>
+        </div>
+        <div class="t-item">
+          <h4>Specialisation — Front Office &amp; Hospitality Operations Management</h4>
+          <div class="t-meta">SRM Institute of Hotel Management (SRM IHM), Chennai – Kattankulathur — 2024</div>
+        </div>
+        <div class="t-item">
+          <h4>Digital Marketing &amp; AI-Driven Training</h4>
+          <div class="t-meta">Login360 Software Training Institute, Chennai — 2025</div>
+          <div class="t-focus">Digital Marketing, SEO, SEM, Social Media Marketing, Content Marketing, Analytics, AI Tools, Performance Marketing</div>
+        </div>
+      </div>
+
+      <div class="cert-list">
+        <h3>Certifications &amp; Professional Training</h3>
+
+        <div class="cert-row">
+          <div><span class="c-name">1 Million Prompters Initiative — Prompt Engineering for AI Systems</span><span class="c-issuer">Dubai Future Foundation &amp; Dubai Centre for Artificial Intelligence (DCAI)</span></div>
+          <div class="c-date">&nbsp;</div>
+        </div>
+        <div class="cert-row">
+          <div><span class="c-name">Principles of Management</span><span class="c-issuer">Great Learning</span></div>
+          <div class="c-date">Jun 11, 2025</div>
+        </div>
+        <div class="cert-row">
+          <div><span class="c-name">AI in Digital Marketing Masterclass</span><span class="c-issuer">IIDE – The Digital School</span></div>
+          <div class="c-date">Feb 20, 2026</div>
+        </div>
+        <div class="cert-row">
+          <div><span class="c-name">Social Media Marketing</span><span class="c-issuer">HP LIFE &amp; HP Foundation</span></div>
+          <div class="c-date">Aug 2, 2026</div>
+        </div>
+        <div class="cert-row">
+          <div><span class="c-name">Local SEO Essentials with Semrush</span><span class="c-issuer">Semrush Academy</span></div>
+          <div class="c-date">Valid through May 7, 2027</div>
+        </div>
+        <div class="cert-row">
+          <div><span class="c-name">Claude AI in 90 Minutes: Build Your AI Work Assistant</span><span class="c-issuer">GUVI Geek Networks (HCL &amp; Google for Education Partner)</span></div>
+          <div class="c-date">Aug 26, 2026</div>
+        </div>
+      </div>
+
+      <p class="edu-note">Certifications reflect completed training and professional development — none are represented as degrees or professional licenses.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Contact</h2>
+        <div class="head-note">Open to on-site Digital Marketing Executive roles in Dubai, UAE.</div>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p style="max-width:44ch; color:var(--ink-soft); margin-bottom:32px;">I'm open to connecting with recruiters, hiring managers, agencies, and businesses regarding Digital Marketing opportunities — particularly on-site roles in Dubai, UAE. Feel free to reach out directly or use the form.</p>
+
+          <div class="contact-block">
+            <h4>Email</h4>
+            <a class="val" href="mailto:muksithktm786@gmail.com">muksithktm786@gmail.com</a>
+          </div>
+
+          <div class="contact-block">
+            <h4>Phone</h4>
+            <div class="val" style="color:var(--slate); font-size:0.95rem;">UAE mobile number — updating soon upon arrival in Dubai</div>
+          </div>
+
+          <div class="contact-block">
+            <h4>Location</h4>
+            <div class="val" style="font-size:0.98rem;">Chennai / Karur District, Tamil Nadu, India</div>
+          </div>
+
+          <div class="contact-block">
+            <h4>Career Status</h4>
+            <div><span class="status-pill">Open to Work — Dubai, UAE</span></div>
+          </div>
+
+          <div class="contact-block">
+            <h4>LinkedIn</h4>
+            <a class="val" href="https://www.linkedin.com/in/si-sahul-hameed-muksith-729a39323" target="_blank" rel="noopener">linkedin.com/in/si-sahul-hameed-muksith-729a39323</a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-confirm" id="formConfirm">Thank you — your message has been received. I usually respond within 24 hours.</div>
+
+          <div class="field">
+            <label for="c-name">Name</label>
+            <input type="text" id="c-name" name="name" required>
+          </div>
+          <div class="field">
+            <label for="c-email">Email</label>
+            <input type="email" id="c-email" name="email" required>
+          </div>
+          <div class="field">
+            <label for="c-subject">Subject</label>
+            <select id="c-subject" name="subject">
+              <option>Job Opportunity</option>
+              <option>Hiring Inquiry</option>
+              <option>Digital Marketing Project</option>
+              <option>Collaboration</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="c-message">Message</label>
+            <textarea id="c-message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary focus-ring">Send Message</button>
+          <p class="response-note">I usually respond within 24 hours.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap" style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; width:100%;">
+    <div>© <span id="year"></span> Sahul Hameed Muksith</div>
+    <div><a href="mailto:muksithktm786@gmail.com">muksithktm786@gmail.com</a> &nbsp;·&nbsp; <a href="https://www.linkedin.com/in/si-sahul-hameed-muksith-729a39323" target="_blank" rel="noopener">LinkedIn</a></div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  var toggle = document.getElementById('menuToggle');
+  var links = document.getElementById('navLinks');
+  toggle.addEventListener('click', function(){
+    var open = links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  links.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      links.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  var form = document.getElementById('contactForm');
+  var confirm = document.getElementById('formConfirm');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    confirm.classList.add('show');
+    form.reset();
+    confirm.scrollIntoView({behavior:'smooth', block:'nearest'});
+  });
+
+  // Resume link placeholder — wire both buttons to the same href once available.
+  var resumeHref = "#"; // TODO: paste Google Drive resume link here
+  document.getElementById('resumeBtnDesktop').setAttribute('href', resumeHref);
+  document.getElementById('resumeBtnMobile').setAttribute('href', resumeHref);
+</script>
+
+</body>
+</html>
