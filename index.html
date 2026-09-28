@@ -9,7 +9,44 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
+/* Hero Section Flexbox Layout */
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
 
+.hero-content {
+  flex: 1;
+}
+
+.hero-image {
+  flex: 0 0 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-photo {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+/* Responsive adjustments for mobile screens */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  
+  .hero-image {
+    margin-bottom: 1.5rem;
+  }
+}
   :root{
     --ink:        #16242B;
     --ink-soft:   #2B3D45;
@@ -519,9 +556,10 @@
 
 <main>
 
-  <!-- HOME / HERO -->
-  <section id="home" class="hero">
-    <div class="wrap">
+ <!-- HOME / HERO -->
+<section id="home" class="hero">
+  <div class="wrap hero-container">
+    <div class="hero-content">
       <div class="eyebrow-line">Digital Marketing Executive · Chennai, India → Dubai, UAE</div>
       <h1>Sahul Hameed Muksith</h1>
       <div class="role-line">Digital Marketing Intern → Digital Marketing Executive</div>
@@ -531,7 +569,11 @@
         <a href="#projects" class="btn btn-outline focus-ring">View My Projects</a>
       </div>
     </div>
-  </section>
+    <div class="hero-image">
+      <img src="your-photo.jpg" alt="Sahul Hameed Muksith" class="profile-photo">
+    </div>
+  </div>
+</section>
 
   <!-- ABOUT -->
   <section id="about">
